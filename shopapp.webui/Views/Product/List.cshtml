@@ -1,0 +1,25 @@
+@model ProductViewModel //yol
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    Product/list
+<h1>@Model.Category.Name</h1> @* yoldan gelenler*@
+    <div>
+     <p>@Model.Products[0].Name</p>
+     <p>@Model.Products[0].Price</p>
+     <p>@Model.Products[0].Description</p>
+    </div>
+
+        <div>
+     <p>@Model.Products[1].Name</p>
+     <p>@Model.Products[1].Price</p>
+     <p>@Model.Products[1].Description</p>
+    </div>
+</body>
+</html>
